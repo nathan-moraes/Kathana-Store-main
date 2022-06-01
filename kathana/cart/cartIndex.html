@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Carrinho</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="cartStyle.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="file:///home/alana/Documentos/kathana-Store-main/kathana/main/index2.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <nav id="menu">
+                <ul>
+                    <li id="langingPage"><a href="file:///home/alana/Documentos/kathana-Store-main/kathana/main/index.html">KATHANA</a></li>
+                    <li> <a href="">Calçados</a></li>
+                    <li> <a href="">Moda Infantil</a></li>
+                    <li> <a href="">Cama, Mesa e Banho</a></li>
+                    <li> <a href="file:///home/alana/Documentos/kathana-Store-main/kathana/vestuario/indexVestuario.html">Vestuário</a></li>
+                </ul>
+            </nav>
+            <p id="title">Carrinho</p>
+        </header>
+        <div class="cartDiv">
+            <p>Confira abaixo os itens que você adicionou em seu carrinho:</p>
+            <div class="item1" id="item"> 
+                <ul>
+                    <li>
+                        <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/sneakers.png" alt="">
+                    </li>
+                    <li>
+                        <p>Produto</p>
+                        <p>Descrição</p>
+                        <p>Quantidade:</p>
+                        <p id="cartItemQt1">2</p>        
+                    </li>
+                    <li style="margin: 3%;">
+                        <p>Valor:</p>                            
+                        <p id="amountItem1" style="font-size: 30px;">200,00</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item2" id="item"> 
+                <ul>
+                    <li>
+                        <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/sneakers.png" alt="">
+                    </li>
+                    <li>
+                        <p>Produto</p>
+                        <p>Descrição</p>
+                        <p>Quantidade:</p>
+                        <p id="cartItemQt2"></p>
+                    </li>
+                    <li style="margin: 3%;">
+                        <p>Valor:</p>                            
+                        <p id="amountItem2" style="font-size: 30px;">140,00</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item3" id="item"> 
+                <ul>
+                    <li>
+                        <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/sneakers.png" alt="">
+                    </li>
+                    <li>
+                        <p>Produto</p>
+                        <p>Descrição</p>
+                        <p>Quantidade:</p>
+                        <p id="cartItemQt3"></p>
+                    </li>
+                    <li style="margin: 3%;">
+                        <p>Valor:</p>                            
+                        <p id="amountItem3" style="font-size: 30px;">89,00</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item4" id="item"> 
+                <ul>
+                    <li>
+                        <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/sneakers.png" alt="">
+                    </li>
+                    <li>
+                        <p>Produto</p>
+                        <p>Descrição</p>
+                        <p>Quantidade:</p>
+                        <p id="cartItemQt4"></p>
+                    </li>
+                    <li style="margin: 3%;">
+                        <p>Valor:</p>                            
+                        <p id="amountItem4" style="font-size: 30px;">100,00</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="line"></div>
+
+            <div class="payment">
+                <ul>
+                    <li>Total:</li>
+                    <li id="totalAmount"></li>
+                </ul>
+            </div>
+            <button id="finalizePurchase">Finalizar Compra</button>
+
+            <div class="alert" id="alert" style="display: none;">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Sucesso! Compra realizada
+            </div>
+        </div>
+
+        <div class="rodape">
+            <nav>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/smartphone.png">
+                            <p>+55 41 3333-3333</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/whatsapp.png">
+                            <p>(41) 99999-0909</p>
+                        </div>
+                    </li>
+                    <li>
+                            <div>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/payment.png">
+                                <p>Pagamento seguro</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/safe.png">
+                                <p>Site Seguro</p>
+                            </div>
+                    </ul>
+    
+                    <div>
+                        <ul class="cards">
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/visa.png" style="width: 70px; height: 70px;">
+                            </li>
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/mastercard.png">
+                            </li>
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/pix.png">
+                            </li> 
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/picpay.png">
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <ul class="transport">
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/sedex1.png">
+                            </li>
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/correios1.png">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p id="copyright" style="text-align: center;">&copy; Todos os direitos são reservados a KATHANA store.</p>
+                    </div>
+                </nav>
+        </div>
+
+        <script>
+            var item1 = 200;
+            var item2 = 140;
+            var item3 = 89;
+            var item4 = 100;
+
+            var quantidade1 = 2;
+            var quantidade2 = 1;
+            var quantidade3 = 5;
+            var quantidade4 = 3;
+
+            var listitem = [item1, item2, item3, item4];
+            var listQt = [quantidade1, quantidade2, quantidade3, quantidade4];
+
+            document.getElementById("cartItemQt1").innerHTML = listQt[0]
+            document.getElementById("cartItemQt2").innerHTML = listQt[1]
+            document.getElementById("cartItemQt3").innerHTML = listQt[2]
+            document.getElementById("cartItemQt4").innerHTML = listQt[3]
+
+            document.getElementById("amountItem1").innerHTML = `R$ ${listitem[0]}`;
+            document.getElementById("amountItem2").innerHTML = `R$ ${listitem[1]}`;
+            document.getElementById("amountItem3").innerHTML = `R$ ${listitem[2]}`;
+            document.getElementById("amountItem4").innerHTML = `R$ ${listitem[3]}`;
+
+            document.getElementById("totalAmount").innerHTML = `R$ ${sum(listitem, listQt)}`;
+
+            function mult(position){
+                return listitem[position] * listQt[position];
+            }
+            
+            function sum(listitem, listQt) {
+                return mult(0) + mult(1) + mult(2) + mult(3); 
+            }
+
+            var finalizePurchase = document.getElementById("finalizePurchase");
+
+            finalizePurchase.addEventListener = function() {
+                document.getElementById("alert").modal.style.display = "block";
+            }
+
+            var close = document.getElementsByClassName("closebtn");
+            var i;
+
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                    var div = this.parentElement;
+                    div.style.opacity = "0";
+                    setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+}
+        </script>
+    </body>
+</html>
+    

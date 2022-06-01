@@ -1,0 +1,157 @@
+body{
+    background-color: black;
+    font-family: serif;
+}  
+
+.header {
+    background: black;
+    padding: 5%;
+}
+
+#title {
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+#cartDiv {
+    margin-right: 10%;
+    display: inline-block;
+    float: right;
+}
+
+#cart {
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 3%;
+    display: block;
+    position: fixed;
+    background: black;
+}
+  
+#menu ul { 
+    list-style: none; 
+    padding: 0px; 
+}
+
+#menu ul li #cart {
+    display: inline; 
+}
+
+#menu ul li { 
+    float: left; 
+}
+
+#menu ul li a { 
+    display: block; 
+    padding: 0 8px; 
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 35px; 
+    font-weight: bold; 
+    margin-right: 6px;
+  
+}
+
+#menu ul li a:hover { 
+    color: #a8d6e7; 
+}
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    background-color: #d31900;
+    padding: 2%;
+    margin: 2%;
+}
+    
+.grid-container > div {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 90px 10px;
+    font-size: 30px;
+}
+    
+.item8 {
+    grid-area: 2 / 1 / span 2 / span 3;
+}
+
+h1 {
+    text-align: center;
+    color: #fae1c0;   
+}
+
+P {
+    text-align: center;
+    color: whi;
+}
+
+#img8 {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+
+}
+
+h2 {
+    color: black;
+}
+
+.grid-container div {
+    border-radius: 10px;
+}
+
+#line {
+    width: auto;
+    height: 2px;
+    margin-right: 1%;
+    margin-left: 1%;
+    background:#d31900
+}
+
+
+.rodape {
+    padding: 3%;
+    background: black;
+}
+
+.rodape p {
+    color: #ffffff;
+    font-size: smaller;
+}
+
+.rodape ul {
+    margin-left: 20%;
+    margin-right: 20%;
+    list-style: none; 
+    padding: 0px; 
+}
+
+.rodape ul li {
+    display: inline-block; 
+    margin: 5%;
+
+}
+
+.rodape img {
+    height: 40px;
+    width: 40 px;
+    margin: auto;
+}
+
+.cards {
+    margin-left: 10%;
+    margin-right: 10%;
+}

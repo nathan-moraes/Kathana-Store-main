@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Detalhe do Produto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="productDetailStyle.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="file:///home/alana/Documentos/kathana-Store-main/kathana/main/index2.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <nav id="menu">
+                <ul>
+                    <li id="langingPage"><a href="file:///home/alana/Documentos/kathana-Store-main/kathana/main/index.html">KATHANA</a></li>
+                    <li> <a href="">Calçados</a></li>
+                    <li> <a href="">Moda Infantil</a></li>
+                    <li> <a href="">Cama, Mesa e Banho</a></li>
+                    <li> <a href="file:///home/alana/Documentos/kathana-Store-main/kathana/vestuario/indexVestuario.html">Vestuário</a></li>
+                </ul>
+                <div>
+                    <a href="file:///home/alana/Documentos/kathana-Store-main/kathana/cart/cartIndex.html">
+                        <img id="cart" src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/carrinho.png">
+                    </a>
+                </div>
+            </nav>
+            <p id="title">Vestuário</p>
+        </header>
+
+        <div class="productImg">
+            <img id="myImg" src="file:///home/alana/Documentos/kathana-Store-main/kathana/vestuario/vestuario2.jpg" alt="Camiseta Naruto" style="width:100%;max-width:300px">
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </div>
+
+        <div style="width: 100%; display:block; background:#ffffff">
+            <div class="productDetailDiv">
+                <p style="font-size: 40px; text-align: center;"><b>Camiseta Naruto Preta.</b></p>
+
+                <ul>
+                    <li style=" margin-bottom: 15%;">
+                        <p style="font-size: 25px;">Camiseta unissex do personagem Naruto. Feita de algodão.</p>
+                        <p>Descrição menor</p>
+                        <form name="form" style="float: left;">
+                            <div style="display: inline;">
+                                <p>Quantidade:</p>
+                                <select name="quantidade" id="quantidade" style="padding: 5px 10px;">
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="trhee">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five">5</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p>Tamanho:</p>
+                                <select name="size" id="size" style="padding: 5px 10px;">
+                                    <option value="pp">PP</option>
+                                    <option value="p">P</option>
+                                    <option value="m">M</option>
+                                    <option value="g">G</option>
+                                    <option value="gg">GG</option>
+                                </select>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <button id="finalizePurchase" style="margin-left: 40%; margin-right: 40%;">Adicionar no carrinho</button>
+
+        </div>
+        <div class="rodape">
+            <nav>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/smartphone.png">
+                            <p>+55 41 3333-3333</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/whatsapp.png">
+                            <p>(41) 99999-0909</p>
+                        </div>
+                    </li>
+                    <li>
+                            <div>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/payment.png">
+                                <p>Pagamento seguro</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/safe.png">
+                                <p>Site Seguro</p>
+                            </div>
+                    </ul>
+    
+                    <div>
+                        <ul class="cards">
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/visa.png" style="width: 70px; height: 70px;">
+                            </li>
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/mastercard.png">
+                            </li>
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/pix.png">
+                            </li> 
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/picpay.png">
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <ul class="transport">
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/sedex1.png">
+                            </li>
+                            <li>
+                                <img src="file:///home/alana/Documentos/kathana-Store-main/kathana/main/correios1.png">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p id="copyright" style="text-align: center;">&copy; Todos os direitos são reservados a KATHANA store.</p>
+                    </div>
+                </nav>
+        </div>
+    
+        <script>
+            var modal = document.getElementById("myModal");
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            var span = document.getElementsByClassName("close")[0];
+
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+
+            var select = document.getElementById('form');
+            var value = select.options[select.selectedIndex].value;
+            console.log(value);
+        </script>
+    </body>
+<html
